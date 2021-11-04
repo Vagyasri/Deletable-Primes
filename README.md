@@ -1,6 +1,5 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
-# Project
+# Deletable Primes
+A “deletable prime” is a prime number where you can delete digits one at a time and still have a prime number.
 
 ## Built With
 
@@ -9,12 +8,6 @@
 - JavaScipt
 - Webpack
 - ES6
-- External API
-- JSON
-
-## Screenshot
-
-![Drum](Drum.png) 
 
 ## Live Demo
 

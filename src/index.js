@@ -11,38 +11,33 @@ const prime = (n) => {
   }
 
   return true;
-}
+};
 
-const splitNumberToDigits = (n) =>  n.toString().split('').map(Number);
+const splitNumberToDigits = (n) => n.toString().split('').map(Number);
 
 const decomposeNumber = (n) => {
   const arr = [];
-  let digits = splitNumberToDigits(n);
-   for(let i=0; i<digits.length; i++) {
-     const before = digits.slice(0, i);
-     const after = digits.slice(i+1);
-     arr.push(`${before.join('')}${after.join('')}`);
-   }
-   return arr.map(Number);
-}
+  const digits = splitNumberToDigits(n);
+  for (let i = 0; i < digits.length; i += 1) {
+    const before = digits.slice(0, i);
+    const after = digits.slice(i + 1);
+    arr.push(`${before.join('')}${after.join('')}`);
+  }
+  return arr.map(Number);
+};
 
 const countPossibilities = (n) => {
-  let count = 0;
   if (splitNumberToDigits(n).length === 1 && prime(n)) {
-    return 1;  
-}
-else {
-    const arrayPrime = decomposeNumber(n).filter(prime);
-    if (arrayPrime.length === 0) {
-      return 0;
-    }
-    else {
-      return arrayPrime.reduce((acc, curr) => {
-        return acc + countPossibilities(curr);
-      }, 0);
-    }
-}
-}
+    return 1;
+  }
 
-const numbers =[537499093, 2147483059, 410256793, 567629137, 46216567629137];
+  const arrayPrime = decomposeNumber(n).filter(prime);
+  if (arrayPrime.length === 0) {
+    return 0;
+  }
+
+  return arrayPrime.reduce((acc, curr) => acc + countPossibilities(curr), 0);
+};
+
+const numbers = [537499093, 2147483059, 410256793, 567629137, 46216567629137];
 console.log(numbers.map(countPossibilities));
