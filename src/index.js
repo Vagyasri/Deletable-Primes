@@ -39,5 +39,6 @@ const countPossibilities = (n) => {
   return arrayPrime.reduce((acc, curr) => acc + countPossibilities(curr), 0);
 };
 
-const numbers = [537499093, 2147483059, 410256793, 567629137, 46216567629137];
+// eslint-disable-next-line max-len
+const numbers = [4125673, 41256793, 337424981, 537430451, 200899998, 537499093, 2147483059, 410256793, 567629137, 46216567629137];
 console.log(numbers.map(countPossibilities));
