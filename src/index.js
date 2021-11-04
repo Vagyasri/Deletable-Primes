@@ -13,11 +13,20 @@ const prime = (n) => {
   return true;
 }
 
-let num = 412567;
-var digits = num.toString().split('');
-var realDigits = digits.map(Number);
+const splitNumberToDigits = (n) =>  n.toString().split('').map(Number);
+const decomposeNumber = (n) => {
+  const arr = [];
+  let digits = splitNumberToDigits(n);
+   for(let i=0; i<digits.length; i++) {
+     const before = digits.slice(0, i);
+     const after = digits.slice(i+1);
+     arr.push(`${before.join('')}${after.join('')}`);
+   }
+   return arr.map(Number);
+}
 
-console.log(realDigits);
+console.log(decomposeNumber(4567));
+
 let count = 0;
 
 // console.log(prime(412567));
