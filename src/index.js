@@ -14,6 +14,7 @@ const prime = (n) => {
 }
 
 const splitNumberToDigits = (n) =>  n.toString().split('').map(Number);
+
 const decomposeNumber = (n) => {
   const arr = [];
   let digits = splitNumberToDigits(n);
@@ -25,8 +26,26 @@ const decomposeNumber = (n) => {
    return arr.map(Number);
 }
 
-console.log(decomposeNumber(4567));
+const countPossibilities = (n) => {
+  let count = 0;
+  if (splitNumberToDigits(n).length === 1 && prime(n)) {
+    return 1;  
+}
+else {
+    const arrayPrime = decomposeNumber(n).filter(prime);
+    if (arrayPrime.length === 0) {
+      return 0;
+    }
+    else {
+      return arrayPrime.reduce((acc, curr) => {
+        return acc + countPossibilities(curr);
+      }, 0);
+    }
+}
+}
 
-let count = 0;
+// console.log(decomposeNumber(4567));
+
+// let count = 0;
 
 // console.log(prime(412567));
