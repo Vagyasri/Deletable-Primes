@@ -4,7 +4,7 @@ A “deletable prime” is a prime number where you can delete digits one at a t
 ## Objective
 - Count the number of ways you can reduce a deletable prime to a one digit number.
 - Input: a number < 8.000.000.000.000.000.000
-Example: 4567
+- Example: 4567
 
 ![Prime](1.png)
 - Output: number of ways to reduce a deletable prime
