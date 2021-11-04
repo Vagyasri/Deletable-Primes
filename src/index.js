@@ -44,8 +44,5 @@ else {
 }
 }
 
-// console.log(decomposeNumber(4567));
-
-// let count = 0;
-
-// console.log(prime(412567));
+const numbers =[537499093, 2147483059, 410256793, 567629137, 46216567629137];
+console.log(numbers.map(countPossibilities));
