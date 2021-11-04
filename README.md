@@ -2,13 +2,13 @@
 A “deletable prime” is a prime number where you can delete digits one at a time and still have a prime number.
 
 ## Objective
-Count the number of ways you can reduce a deletable prime to a one digit number.
-Input: a number < 8.000.000.000.000.000.000
+- Count the number of ways you can reduce a deletable prime to a one digit number.
+- Input: a number < 8.000.000.000.000.000.000
 Example: 4567
 
 ![Prime](1.png)
-Output: number of ways to reduce a deletable prime
-Output of example above: 3
+- Output: number of ways to reduce a deletable prime
+- Output of example above: 3
 
 ## Built With
 
@@ -29,6 +29,12 @@ Output of example above: 3
 - GitHub: [@Vagyasri](https://github.com/Vagyasri)
 - Twitter: [@Vagyasri](https://twitter.com/Vagyasri)
 - LinkedIn: [Bhagyashree Patra](https://www.linkedin.com/in/bhagyashree-patra-029bb059/)
+  
+👤 **King Josaphat Chewa (KJC)**
+
+- GitHub: [@Kingjosh007](https://github.com/Kingjosh007)
+- Twitter: [@KingJoChewa](https://twitter.com/KingJoChewa)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/king-josaphat-chewa-aa154011b/)
 
 ## Getting Started
 
