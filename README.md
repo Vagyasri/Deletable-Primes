@@ -1,6 +1,15 @@
 # Deletable Primes
 A “deletable prime” is a prime number where you can delete digits one at a time and still have a prime number.
 
+## Objective
+Count the number of ways you can reduce a deletable prime to a one digit number.
+Input: a number < 8.000.000.000.000.000.000
+Example: 4567
+
+![Prime](1.png)
+Output: number of ways to reduce a deletable prime
+Output of example above: 3
+
 ## Built With
 
 - HTML
@@ -11,7 +20,7 @@ A “deletable prime” is a prime number where you can delete digits one at a t
 
 ## Live Demo
 
-[Live View!!](https://vagyasri.github.io/Leaderboard/dist/)
+[Live View!!](https://vagyasri.github.io/Deletable-Primes/dist/)
 
 ## Author
 
@@ -31,9 +40,9 @@ A “deletable prime” is a prime number where you can delete digits one at a t
 
 ### Cloning the repo to your local system (If you already have git, installed in your system):
 
-- [Copy this link](https://github.com/Vagyasri/Kanban.git)
+- [Copy this link](https://github.com/Deletable-Primes/Kanban.git)
 - Open your terminal or command line
-- Run "git clone [Paste this link](https://github.com/Vagyasri/Kanban.git)"
+- Run "git clone [Paste this link](https://github.com/Deletable-Primes/Kanban.git)"
 - Open the folder with your code editor
 - Now You can edit the code and check the changes in the browser using Live Server
 
@@ -74,7 +83,7 @@ Start by:
 - Push your branch up to your forked repository
 - Open a Pull Request with a detailed description to the development branch of the original project for a review
 
-Feel free to check the [issues page](https://github.com/Vagyasri/Kanban/issues), contribute to the Project by creating an issue.
+Feel free to check the [issues page](https://github.com/Deletable-Primes/Kanban/issues), contribute to the Project by creating an issue.
 
 
 ## Show your support
