@@ -1,5 +1,7 @@
 # Deletable Primes
 A “deletable prime” is a prime number where you can delete digits one at a time and still have a prime number.
+![Deletable-Prime](2.png)
+
 
 ## Objective
 - Count the number of ways you can reduce a deletable prime to a one digit number.
