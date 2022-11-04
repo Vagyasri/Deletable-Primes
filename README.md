@@ -1,6 +1,6 @@
 # Deletable Primes
 A “deletable prime” is a prime number where you can delete digits one at a time and still have a prime number.
-![Deletable-Prime](2.png)
+![Deletable-Prime](Doc/2.png)
 
 
 ## Objective
@@ -8,7 +8,7 @@ A “deletable prime” is a prime number where you can delete digits one at a t
 - Input: a number < 8.000.000.000.000.000.000
 - Example: 4567
 
-![Prime](1.png)
+![Prime](Doc/1.png)
 - Output: number of ways to reduce a deletable prime
 - Output of example above: 3
 
