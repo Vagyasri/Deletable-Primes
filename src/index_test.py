@@ -38,17 +38,17 @@ def test_get_prime_digit_list():
 
 def test_get_count():
     assert index.get_count(467) == 2
-    # assert index.get_count(457) == 1
-    # assert index.get_count(45673) == 9
-    # assert index.get_count(41257) == 3
-    # assert index.get_count(4567) == 3
-    # assert index.get_count(4125673) == 12
-    # assert index.get_count(41256793) == 21
-    # assert index.get_count(337424981) == 14
-    # assert index.get_count(537430451) == 3
-    # assert index.get_count(200899998) == 0
-    # assert index.get_count(537499093) == 8
-    # assert index.get_count(2147483059) == 8
-    # assert index.get_count(410256793) == 29
-    # assert index.get_count(567629137) == 6
-    assert index.get_count(46216567629137) == 12
+    assert index.get_count(457) == 1
+    assert index.get_count(45673) == 9
+    assert index.get_count(41257) == 3
+    assert index.get_count(4567) == 3
+    assert index.get_count(4125673) == 12
+    assert index.get_count(41256793) == 21
+    assert index.get_count(337424981) == 14
+    assert index.get_count(537430451) == 3
+    assert index.get_count(200899998) == 0
+    assert index.get_count(537499093) == 8
+    assert index.get_count(2147483059) == 8
+    assert index.get_count(410256793) == 29
+    assert index.get_count(567629137) == 84
+    assert index.get_count(46216567629137) == 121
